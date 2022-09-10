@@ -1,8 +1,4 @@
 # todo-list
-Simple todo list with a focus on ES6 modules and JS DOM manipulation.
-
-
-# todo-list
 
 * Creating a To-Do List.
 * Focusing on implementing SOLID principles especially the 'Single Responsibility Principle' - Each function/class/object has one responsibility.
@@ -11,6 +7,3 @@ Simple todo list with a focus on ES6 modules and JS DOM manipulation.
 
 
 
-
-
-* Terminal => `npm install --save-dev style-loader css-loader`;
