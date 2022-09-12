@@ -1,6 +1,15 @@
-import { foo } from '../dist/main.js';
-// import css from './style.css';
-import { makeBtn } from '../dist/foo.js'
+import './style.css';
 
-foo();
-makeBtn();
+
+const inputCheckbox = document.querySelector('#checkbox');
+const btn = document.querySelector('button');
+
+// btn.addEventListener('click', (e) => {
+//     e.preventDefault();
+    
+//     if (inputCheckbox.checked) {
+//         console.log('checked');
+//     } else {
+//         console.log('NOT checked')
+//     }
+// })

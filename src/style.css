@@ -1,0 +1,147 @@
+:root {
+    --main-color-green: rgb(194, 255, 231);
+    --color-gray: rgb(215, 215, 215);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/****************************************! Header *****************************************/
+.header {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    justify-items: center
+};
+
+
+h1 {
+    font-size: 200px;
+}
+
+/****************************************! Navbar *****************************************/
+.main {
+    border: 2px solid var(--color-gray);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+    max-height: 100%;
+}
+
+.navbar {
+    border-right: 2px solid var(--color-gray);
+}
+
+.navbar > ul {
+    display: grid;
+}
+
+.list-today {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar > ul > div {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: 1fr;
+}
+
+.navbar > ul > div > img {
+    width: 1rem;
+    height: auto;
+    place-self: center;
+}
+
+.main-title > p {
+    font-size: 3rem;
+    padding-left: 1rem;
+} 
+
+.list-projects,
+.list-tags {
+    margin-bottom: -2rem;
+}
+
+.add-project {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.new-project,
+.new-tags {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    width: 3rem;
+    gap: none;
+}
+
+.new-project > li,
+.new-tags > li {
+    font-size: 1rem;
+    margin: 0;
+    /* padding: 0; */
+
+}
+
+.new-project > img,
+.new-tags > img {
+    width: 1rem;
+    height: auto;
+    place-self: center;
+}
+
+
+/****************************************! List *****************************************/
+.list-title > p {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.list {
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.list-items {
+    display: grid;
+}
+
+.check-btn {
+    place-self: center;
+}
+
+.text-form {
+    display: grid;
+    background-color: var(--main-color-green);
+    padding: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+}
+
+.input-form {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+/* Example for to-do priority effect: */
+
+
+input {
+    /* Remove all styling associated with input box. */
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: var(--main-color-green);
+}
+

@@ -1,13 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./bundle.js" defer="defer"></script>
-    <title>To-Do List</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="./bundle.js" defer="defer"></script>
+  	<title>To-Do List</title>
+	</head>
+	<body>
+
+		<div class="container">
+<!-- header -->
+			<div class="header">
+				<div class="navbar-icon">
+					<img src="../src/images/menu.svg" alt="">
+				</div>
+				<div class="header-title">
+					<h1>To-Do List</h1>
+				</div>
+			</div>
+<!-- main -->
+			<div class="main">
+
+				<div class="navbar">
+					<ul>
+						<div class="list-today">
+							<img src="../src/images/calendar-today-outline.svg" alt="">
+							<li id="today">Today</li>
+						</div>
+						<div class="list-all">
+							<img src="../src/images/tray-full.svg" alt="">
+							<li id="all">All</li>
+						</div>
+						<div class="list-projects">
+							<img src="../src/images/pencil-ruler.svg" alt="">
+							<li id="projects">Projects</li>
+							<img src="../src/images/chevron-down.svg" alt="">
+						</div>
+						<div class="add-project">
+							<ul>
+								<div class="new-project">
+									<img src="../src/images/close-thick.svg" alt="">
+									<li>Training Doggo</li>
+								</div>
+								<div class="new-project">
+									<img src="../src/images/close-thick.svg" alt="">
+									<li>Learning Guitar</li>
+								</div>
+								<div class="new-project">
+									<img src="../src/images/close-thick.svg" alt="">
+									<li>Caring for House Plants</li>
+								</div>
+							</ul>
+						</div>
+						<div class="list-tags">
+							<img src="../src/images/pound-box-outline.svg" alt="">
+							<li id="tags">#Tags</li>
+							<img src="../src/images/chevron-down.svg" alt="">
+						</div>
+						<div class="add-tags">
+							<ul>
+								<div class="new-tags">
+									<img src="../src/images/close-thick.svg" alt="">
+									<li>Training Doggo</li>
+								</div>
+								<div class="new-project">
+									<img src="../src/images/close-thick.svg" alt="">
+									<li>Learning Guitar</li>
+								</div>
+								<div class="new-project">
+									<img src="../src/images/close-thick.svg" alt="">
+									<li>Caring for House Plants</li>
+								</div>
+							</ul>
+						</div>
+					</ul>
+				</div>
+
+				<div class="list">
+					<div class="list-title">
+						<p>Today +</p>
+					</div>
+					<!-- Unfocused list-items => Should only display the title and due-date if there is one. => Focused list-item should be done in .js file dynamically when the user clicks on the individual item. -->
+					<div class="list-items">
+						<form class="input-form" action="">
+							<div class="check-btn">
+								<!-- When checkbox submitted, return value => name = value ('checkbox' = 'completed') -->
+								<input type="checkbox" name="checkbox" id="checkbox" value="completed">
+								<label for="checkbox"></label>
+							</div>
+							<div class="text-form">
+								<label for="item-title"></label>
+								<input type="text" name="item-title" id="item-title" placeholder="Todo">
+	
+								<label for="notes"></label>
+								<input type="text" name="notes" id="notes" placeholder="Notes">
+	
+								<label for="item-date"></label>
+								<input type="datetime" name="item-date" id="item-date" placeholder="Due on...">
+
+								<label for="tags"></label>
+								<input type="text" name="tags" id="tags" placeholder="Tags #">
+							</div>
+						</form>
+						<form class="input-form" action="">
+							<div class="check-btn">
+								<!-- When checkbox submitted, return value => name = value ('checkbox' = 'completed') -->
+								<input type="checkbox" name="checkbox" id="checkbox" value="completed">
+								<label for="checkbox"></label>
+							</div>
+							<div class="text-form">
+								<label for="item-title"></label>
+								<input type="text" name="item-title" id="item-title" placeholder="Todo">
+	
+								<label for="notes"></label>
+								<input type="text" name="notes" id="notes" placeholder="Notes">
+	
+								<label for="item-date"></label>
+								<input type="datetime" name="item-date" id="item-date" placeholder="Due on...">
+								
+								<label for="tags"></label>
+								<input type="text" name="tags" id="tags" placeholder="Tags #">
+							</div>
+						</form>
+						<form class="input-form" action="">
+							<div class="check-btn">
+								<!-- When checkbox submitted, return value => name = value ('checkbox' = 'completed') -->
+								<input type="checkbox" name="checkbox" id="checkbox" value="completed">
+								<label for="checkbox"></label>
+							</div>
+							<div class="text-form">
+								<label for="item-title"></label>
+								<input type="text" name="item-title" id="item-title" placeholder="Todo">
+	
+								<label for="notes"></label>
+								<input type="text" name="notes" id="notes" placeholder="Notes">
+	
+								<label for="item-date"></label>
+								<input type="datetime" name="item-date" id="item-date" placeholder="Due on...">
+								
+								<label for="tags"></label>
+								<input type="text" name="tags" id="tags" placeholder="Tags #">
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+		</div>
+
+
     
-</body>
+	</body>
 </html>
